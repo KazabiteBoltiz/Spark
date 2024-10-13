@@ -9,7 +9,7 @@
 - ### **Spark.Event(EventName : string)**
   Returns a Spark "Event" object, which shortens simple methods like :FireServer() and :FireClient() to :Fire(), along with :FireAll() for :FireAllClients()
 - ### **Spark.Function(FunctionName : string)**
-  Returns a Spark "Function" object, which comes with Function:Invoke() on client, and Function.OnInvoke, which function similarly to usual RemoteFunctions
+  Returns a Spark "Function" object, which comes with Function:Invoke() on client, and Function.OnInvoke, which work similarly to usual RemoteFunctions. I however, have intentionally not added Client invoking on server (RemoteFunctions should never be invoked on server anyway)
 - ### **Spark.Property(PropertyName : string, initialValue : any)**
 - Returns a Spark "Property" object, which allows value replication from the Server to the client without using ValueInstances and cluttering the Explorer. Property:Set(value : any) and Property:SetFor(player : Player, value : any) work similarly to rbxutil's RemoteProperty.
 - ### **Fake Signalling/ Signal Placebos**
